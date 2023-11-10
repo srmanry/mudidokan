@@ -43,7 +43,7 @@ class CustomAppbar extends StatelessWidget implements PreferredSizeWidget {
               child: drawer,
             ),
           ),
-          Text("Grocery shop",
+          Text("মুদি দোকান",
               style: robotoBold.copyWith(
                   color: Colors.black, fontWeight: FontWeight.bold)),
           InkWell(

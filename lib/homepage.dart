@@ -27,6 +27,16 @@ class HomeScreen extends StatelessWidget {
     "assets/catagory/c6.png",
     "assets/catagory/c7.png",
   ];
+  List catagorynamelist = [
+    "সবজী",
+    "পেস্ট",
+    "ব্রাস",
+    "তেল",
+    "সবান",
+    "পেস্ট",
+    "ব্রাস",
+    "চাল",
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -97,7 +107,7 @@ class HomeScreen extends StatelessWidget {
                                   height: 8,
                                 ),
                                 Text(
-                                  "Name",
+                                  catagorynamelist[index],
                                   style: robotoMedium.copyWith(
                                       fontWeight: FontWeight.bold),
                                 )
