@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 
@@ -45,6 +46,7 @@ class HomeScreen extends StatelessWidget {
           child: Column(
             children: [
               SizedBox(
+                // height: 20.h,
                 height: Get.height * 0.06,
               ),
               const CustomAppbar(
@@ -55,6 +57,7 @@ class HomeScreen extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(vertical: 10),
                 child: Container(
                   width: double.maxFinite,
+                  // height: 10.h,
                   height: Get.height * 0.20,
                   decoration: BoxDecoration(
                       color: Colors.black,
@@ -89,29 +92,33 @@ class HomeScreen extends StatelessWidget {
                         return Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 8.0),
                           child: Container(
-                            width: Get.width * 0.20,
+                            //width: Get.width * 0.20,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(10),
                               color: catgoryColor[index],
                             ),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Image.asset(
-                                  catagoryimg[index],
-                                  height: 50,
-                                  width: 60,
-                                ),
-                                const SizedBox(
-                                  height: 8,
-                                ),
-                                Text(
-                                  catagorynamelist[index],
-                                  style: robotoMedium.copyWith(
-                                      fontWeight: FontWeight.bold),
-                                )
-                              ],
+                            child: Padding(
+                              padding:
+                                  const EdgeInsets.symmetric(horizontal: 15.0),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Image.asset(
+                                    catagoryimg[index],
+                                    height: 50,
+                                    width: 60,
+                                  ),
+                                  const SizedBox(
+                                    height: 8,
+                                  ),
+                                  Text(
+                                    catagorynamelist[index],
+                                    style: robotoMedium.copyWith(
+                                        fontWeight: FontWeight.bold),
+                                  )
+                                ],
+                              ),
                             ),
                           ),
                         );
