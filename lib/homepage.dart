@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+
 import 'package:get/get.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 
 import 'custom/cust_appbar.dart';
+import 'custom/custom_drawer.dart';
 import 'data_model/homedata.dart';
 import 'style.dart';
 
@@ -291,20 +292,26 @@ class HomeScreen extends StatelessWidget {
               // tabBackgroundColor: Colors.purple.withOpacity(0.1),
               padding: const EdgeInsets.symmetric(
                   horizontal: 20, vertical: 5), // navigation bar padding
-              tabs: const [
+              tabs: [
                 GButton(
+                  onPressed: () {},
                   icon: Icons.home,
                   text: 'Home',
                 ),
                 GButton(
+                  onPressed: () {},
                   icon: Icons.heart_broken,
                   text: 'Likes',
                 ),
                 GButton(
+                  onPressed: () {},
                   icon: Icons.search,
                   text: 'Search',
                 ),
                 GButton(
+                  onPressed: () {
+                    Get.to(Customrawer());
+                  },
                   icon: Icons.person,
                   text: 'Profile',
                 )

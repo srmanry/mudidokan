@@ -22,7 +22,7 @@ class _CustomLoginState extends State<CustomLogin> {
     return Scaffold(
       body: Form(
         child: Padding(
-          padding: EdgeInsets.all(10.0),
+          padding: const EdgeInsets.all(10.0),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,

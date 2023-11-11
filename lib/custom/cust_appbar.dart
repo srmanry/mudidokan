@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../style.dart';
-import 'custom_drawer.dart';
 
 class CustomAppbar extends StatelessWidget implements PreferredSizeWidget {
   final Icon? drawer;
@@ -27,7 +26,7 @@ class CustomAppbar extends StatelessWidget implements PreferredSizeWidget {
         children: [
           InkWell(
             onTap: () {
-              Get.to(const DrawerScreen());
+              //  Get.to(const DrawerScreen());
             },
             child: Container(
               decoration: BoxDecoration(
@@ -69,6 +68,5 @@ class CustomAppbar extends StatelessWidget implements PreferredSizeWidget {
   }
 
   @override
-  // TODO: implement preferredSize
   Size get preferredSize => throw UnimplementedError();
 }

@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class ProductCartScreen extends StatefulWidget {
+  const ProductCartScreen({super.key});
+
   @override
   State<ProductCartScreen> createState() => _ProductCartScreenState();
 }
@@ -54,7 +56,7 @@ class _ProductCartScreenState extends State<ProductCartScreen> {
             height: 50,
             width: double.maxFinite,
             color: Colors.green,
-            child: Text("Pay NEW"),
+            child: const Text("Pay NEW"),
           )
         ],
       ),
